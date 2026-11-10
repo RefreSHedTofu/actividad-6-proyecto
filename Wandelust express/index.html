@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wanderlust Express - Descubre los mejores destinos turísticos y reserva tus próximas vacaciones.">
+    <title>Wanderlust Express | Agencia de Viajes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado Principal -->
+    <header class="main-header">
+        <div class="logo-container">
+            <h1>Wanderlust Express</h1>
+        </div>
+        
+        <!-- Botón Hamburguesa -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+
+        <!-- Sección Hero -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h2>Explora el Mundo con Nosotros</h2>
+                <p>Encuentra paquetes turísticos inolvidables adaptados a tu presupuesto.</p>
+                <a href="#destinos" class="btn-primary">Ver Destinos</a>
+            </div>
+        </section>
+
+        <!-- Sección de Destinos -->
+        <section id="destinos" class="destinations-section">
+            <h2>Destinos Populares</h2>
+            <p>Selecciona tu próximo destino y vive una experiencia única.</p>
+            
+            <div class="destinations-grid">
+                <!-- Destino 1 -->
+                <article class="card">
+                    <img src="images/paris.jpg" alt="Torre Eiffel en París">
+                    <div class="card-body">
+                        <h3>París, Francia</h3>
+                        <p class="price">$5.200.000 COP</p>
+                        <p>Disfruta de la ciudad del amor...</p>
+                        <button class="btn-secondary btn-modal" 
+                                data-title="París, Francia" 
+                                data-price="$5.200.000 COP" 
+                                data-img="images/paris.jpg" 
+                                data-desc="París ofrece una experiencia inigualable combinando el romanticismo de la Torre Eiffel, cruceros por el río Sena y estancias en hoteles boutique de lujo con desayuno incluido.">
+                            Más Información
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Destino 2 -->
+                <article class="card">
+                    <img src="images/kioto.jpg" alt="Templo en Kioto">
+                    <div class="card-body">
+                        <h3>Kioto, Japón</h3>
+                        <p class="price">$7.800.000 COP</p>
+                        <p>Descubre la armonía entre lo tradicional y lo moderno en Japón.</p>
+                        <button class="btn-secondary btn-modal" 
+                                data-title="Kioto, Japón" 
+                                data-price="$7.800.000 COP" 
+                                data-img="images/kioto.jpg" 
+                                data-desc="Descubre la armonía entre lo tradicional y lo moderno en el corazón histórico de Japón.">
+                            Más Información
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Destino 3 -->
+                <article class="card">
+                    <img src="images/cancun.jpg" alt="Playa en Cancún">
+                    <div class="card-body">
+                        <h3>Cancún, México</h3>
+                        <p class="price">$3.400.000 COP</p>
+                        <p>Relájate en playas de arena blanca con todo incluido y recorre las ruinas mayas.</p>
+                        <button class="btn-secondary btn-modal" 
+                                data-title="Cancún, México" 
+                                data-price="$3.400.000 COP" 
+                                data-img="images/cancun.jpg" 
+                                data-desc="Relájate en playas de arena blanca con todo incluido y recorre las ruinas mayas.">
+                            Más Información
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Destino 4 -->
+                <article class="card">
+                    <img src="images/cartagena.jpg" alt="Ciudad Amurallada en Cartagena">
+                    <div class="card-body">
+                        <h3>Cartagena, Colombia</h3>
+                        <p class="price">$1.800.000 COP</p>
+                        <p>Disfruta del encanto colonial, atardeceres mágicos sobre el mar Caribe.</p>
+                        <button class="btn-secondary btn-modal" 
+                                data-title="Cartagena, Colombia" 
+                                data-price="$1.800.000 COP" 
+                                data-img="images/cartagena.jpg" 
+                                data-desc="Disfruta del encanto colonial, atardeceres mágicos sobre el mar Caribe y las islas del Rosario.">
+                            Más Información
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Destino 5 -->
+                <article class="card">
+                    <img src="images/cusco.jpg" alt="Machu Picchu en Cusco">
+                    <div class="card-body">
+                        <h3>Cusco y Machu Picchu, Perú</h3>
+                        <p class="price">$2.900.000 COP</p>
+                        <p>Adéntrate en la cordillera de los Andes y descubre la mística ciudadela inca.</p>
+                        <button class="btn-secondary btn-modal" 
+                                data-title="Cusco y Machu Picchu, Perú" 
+                                data-price="$2.900.000 COP" 
+                                data-img="images/cusco.jpg" 
+                                data-desc="Adéntrate en la cordillera de los Andes y descubre la mística ciudadela inca.">
+                            Más Información
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Destino 6 -->
+                <article class="card">
+                    <img src="images/madrid.jpg" alt="Gran Vía en Madrid">
+                    <div class="card-body">
+                        <h3>Madrid, España</h3>
+                        <p class="price">$4.600.000 COP</p>
+                        <p>Vive la vibrante vida cultural, el arte de clase mundial y la gastronomía española.</p>
+                        <button class="btn-secondary btn-modal" 
+                                data-title="Madrid, España" 
+                                data-price="$4.600.000 COP" 
+                                data-img="images/madrid.jpg" 
+                                data-desc="Vive la vibrante vida cultural, el arte de clase mundial y la gastronomía española.">
+                            Más Información
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section id="servicios" class="services-section">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-container">
+                <article class="service-item">
+                    <h3>Vuelos directos</h3>
+                    <p>Alianzas con las principales aerolíneas para garantizar tarifas competitivas.</p>
+                </article>
+                <article class="service-item">
+                    <h3>Hospedaje VIP</h3>
+                    <p>Selección rigurosa de hoteles y resorts con altos estándares de confort.</p>
+                </article>
+                <article class="service-item">
+                    <h3>Guías Locales</h3>
+                    <p>Excursiones organizadas con profesionales bilingües certificados.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Nosotros -->
+        <section id="nosotros" class="about-section">
+            <h2>Sobre Wanderlust Express</h2>
+            <p>Más de 10 años conectando viajeros con experiencias inolvidables alrededor del mundo.</p>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="contact-section">
+            <h2>Contáctanos o Solicita una Cotización</h2>
+            <p>Llena el siguiente formulario y un asesor se comunicará contigo.</p>
+
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Carlos Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono de Contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="3001234567">
+                </div>
+
+                <div class="form-group">
+                    <label for="destino-interes">Destino de Interés:</label>
+                    <select id="destino-interes" name="destino-interes" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="paris">París, Francia</option>
+                        <option value="kyoto">Kioto, Japón</option>
+                        <option value="cancun">Cancún, México</option>
+                        <option value="cartagena">Cartagena, Colombia</option>
+                        <option value="cusco">Cusco, Perú</option>
+                        <option value="madrid">Madrid, España</option>
+                        <option value="otro">Otro destino</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="personas">Número de Pasajeros:</label>
+                    <input type="number" id="personas" name="personas" min="1" max="20" value="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje o Solicitud Especial:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos fecha aproximada y detalles..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Consulta</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Ventana Emergente (Modal) -->
+    <div id="destinos-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-img" src="" alt="Imagen del destino">
+            <h3 id="modal-title">Título del Destino</h3>
+            <p id="modal-price">$0 COP</p>
+            <p id="modal-description">Descripción detallada...</p>
+            <a href="#contacto" class="btn-primary" id="modal-cotizar-btn">Cotizar Este Destino</a>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="main-footer">
+        <div class="footer-info">
+            <p>&copy; 2026 Wanderlust Express. Todos los derechos reservados.</p>
+            <p>Proyecto Integrador - Ingeniería Web I</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Política de Privacidad</a> | 
+            <a href="#">Términos y Condiciones</a>
+        </div>
+    </footer>
+
+    <!-- Script único -->
+    <script src="js/main.js"></script>
+</body>
+</html>
